@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="content">
+    <h1 class="content-title">用户登录</h1>
+    <div class="content-form">
+    <form ng-app="myApp"  ng-controller="MyCtrl" name="myForm" novalidate>
+            <div id="change_margin_1">
+            <input class="user" type="text"  #user placeholder="请输入用户名"/>         
+            </div>
+            <div id="change_margin_2">
+            <input class="password" type="password" #pwd placeholder="请输入密码"/>            
+            </div>
+            <div id="change_margin_3">
+            <button class="content-form-signup" type="submit" (click)="login(user.value,pwd.value)">登录</button>
+            </div>
+            <a routerLink="/forget">忘记密码</a>
+            <a routerLink="/register">注册用户</a>
+ </form>  
+ </div>
+ </div> 
+</body>
+</html>

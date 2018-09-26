@@ -1,0 +1,23 @@
+<h2>My Users</h2>
+ 
+  <div>
+      <label>User name:
+        <input #userName />
+      </label>
+      <br>
+      <br>
+      <label>User password:
+        <input #password />
+      </label>
+      <br>
+      <br>
+      <!-- (click) passes input value to add() and then clears the input -->
+      <button (click)="add(userName.value,password.value)">
+        add
+      </button>
+    </div>
+    <ul class="users">
+        <li *ngFor="let user of users">
+            <span class="badge"> {{user.id}}</span>{{user.name}}
+        </li>
+      </ul>

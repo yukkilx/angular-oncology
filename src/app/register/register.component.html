@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="content">
+        <h1 class="content-title">创建账户</h1>
+        <div class="content-form">
+            <form ng-app="myApp"  ng-controller="validateCtrl" name="myForm" novalidate>
+                <div id="change_margin_1">
+					<input class="user" type="text" name="user" placeholder="请输入用户名" #username />
+				</div>
+                <div id="change_margin_2">
+					<input class="password" type="password" name="password" placeholder="请输入密码" #password1/>
+				</div>
+				<div id="change_margin_3">
+				   <input class="password" type="password" name="password" placeholder="确认密码" #password2/>
+				</div>
+                <div id="change_margin_4">
+                    <input class="content-form-signup" type="submit" value="创建账户">
+                </div>
+            </form>
+        </div>
+	</div>
+</body>
+</html>

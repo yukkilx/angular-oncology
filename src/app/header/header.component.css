@@ -1,0 +1,14 @@
+#hearder { width:1000px; margin:0 auto;font-family:'微软雅黑', 'Microsoft YaHei', 'YaHei', sans-serif;background:#95caca;}
+#hearder .logo { width:260px; height:90px; float:left;}
+#hearder .logo img { width:260px; height:90px;}
+#hearder .logo-name { width:390px; height:90px; float:left; font-size:18px; font-weight:bold; color:#0f62c5; line-height:90px; text-align:left;}
+#hearder .form-tools { width:350px; height:90px; float:right;}
+#hearder .form-tools .tools-link { width:100%; height:40px; line-height:40px; color:#0f62c5; text-align:right;}
+#hearder .form-tools .tools-link a { color:#0f62c5; text-decoration:none;}
+#hearder .form-tools .search-box { width:100%; height:50px; position:relative;}
+#hearder .form-tools .search-box .input-text { width:130px; height:15px; position:absolute; top:0; right:0; padding:5px 30px 5px 5px; border:1px solid #ccc; border-radius:3px; background:#fff;}
+#hearder .form-tools .search-box .input-submit { width:25px; height:25px; position:absolute;}
+/*清除浮动样式class="clearfix"*/
+.clearfix:after { content:"."; display:block; height:0;	clear:both;	visibility:hidden;}
+a { color:#666; text-decoration:none;}
+a:hover { color:#2085e6; text-decoration:underline;}
