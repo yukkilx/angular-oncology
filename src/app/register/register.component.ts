@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { UserService } from '../user.service';
 import { User } from '../user';
 import { LoginComponent } from '../login/login.component';
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+<<<<<<< HEAD
 export class RegisterComponent extends LoginComponent implements OnInit {
 
   users = this.getUsers();
@@ -41,4 +45,6 @@ export class RegisterComponent extends LoginComponent implements OnInit {
         }
    } else {alert('用户名和密码不能为空！'); }
  }
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 }

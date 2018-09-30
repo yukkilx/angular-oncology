@@ -10,18 +10,22 @@ import { User } from '../user';
 })
 export class LoginComponent implements OnInit {
 
+<<<<<<< HEAD
   users = this.getUsers();
   use: User;
   count = 0;
 
   constructor(public router: Router,
               public userService: UserService) { }
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 
   ngOnInit() {
   }
 
   login(user, pwd) {
             if (user && pwd) {
+<<<<<<< HEAD
               for (const use of this.users) {
                     if (use.name === user && use.password === pwd) {
                      this.router.navigateByUrl('index');
@@ -40,6 +44,8 @@ export class LoginComponent implements OnInit {
             }
           }
 
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
   getUsers() {
      return this.userService.getUsers()
      .subscribe(users => this.users = users);

@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user';
+<<<<<<< HEAD
 import { Router } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 
 @Component({
   selector: 'app-users',
@@ -12,10 +15,13 @@ import { LoginComponent } from '../login/login.component';
 export class UsersComponent implements OnInit {
 
   users: User[];
+<<<<<<< HEAD
   selectedUser: User;
 
   constructor(private router: Router,
               private userService: UserService) {}
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 
   ngOnInit() {
     this.getUsers();
@@ -23,6 +29,7 @@ export class UsersComponent implements OnInit {
 
   getUsers(): void {
     this.userService.getUsers()
+<<<<<<< HEAD
           .subscribe(users => {this.users = users; });
   }
 
@@ -43,4 +50,6 @@ export class UsersComponent implements OnInit {
     this.selectedUser = user;
   }
 
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 }

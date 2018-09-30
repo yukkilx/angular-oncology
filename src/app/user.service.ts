@@ -28,6 +28,7 @@ export class UserService {
 
   addUser (user: User): Observable<User> {
     return this.http.post<User>(this.usersUrl, user, httpOptions).pipe(
+<<<<<<< HEAD
       catchError(this.handleError<User>('addUser'))
     );
   }
@@ -40,6 +41,8 @@ export class UserService {
     ); }
 
 
+=======
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
   /**
    * Handle Http operation that failed.
    * Let the app continue.
@@ -54,4 +57,8 @@ export class UserService {
       return of(result as T);
     };
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
