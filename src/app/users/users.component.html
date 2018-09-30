@@ -1,0 +1,33 @@
+<h2>My Users</h2>
+
+  <div>
+      <label>User name:
+        <input #userName />
+      </label>
+      <br>
+      <br>
+      <label>User password:
+        <input #password />
+      </label>
+      <br>
+      <br>
+      <!-- (click) passes input value to add() and then clears the input -->
+      <button class="content-form-signup" (click)="add(userName.value,password.value)">
+        add
+      </button>
+      <ul class="users">
+      <li *ngFor="let user of users">
+        <span class="badge">{{user.id}}</span> {{user.name}}
+        <button class="delete" title="delete user"
+        (click)="delete(user)">delete</button>
+        <button class="edit" title="edit user"
+        [class.selected]="user === selectedUser" (click)="onSelect(user)">edit</button>
+    </li>
+    </ul>
+    <div *ngIf="selectedUser">
+      <h2>{{selectedUser.name}} Details</h2>
+      <div><span>id: </span>{{selectedUser.id}}
+    </div>
+    
+    </div>
+   
