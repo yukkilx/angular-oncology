@@ -14,10 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { InMemoryDataService } from './in-memory-data.service';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { UsersComponent } from './users/users.component';
-<<<<<<< HEAD
 import { UserDetailsComponent } from './user-details/user-details.component';
-=======
->>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
 
 @NgModule({
   declarations: [
@@ -29,10 +26,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     HeaderComponent,
     FooterComponent,
     UsersComponent,
-<<<<<<< HEAD
     UserDetailsComponent
-=======
->>>>>>> 785de4001867b4227a50f29b66b757ed1df96154
   ],
   imports: [
     BrowserModule,
